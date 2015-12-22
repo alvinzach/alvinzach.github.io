@@ -8,7 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/bootstrap.js" ></script>
 	<title>Bootstrap Testimonial Rotator </title>
-<head>
+	
+</head>
 <body>
 <div class="holder">
 	<div class="container">
@@ -55,6 +56,156 @@
   </a>
 </div>
 	</div>
+
+</div>
+<h1 class="top"> Simple Bootstrap Testimonial Carousal </h1>
+
+<div class="container">
+<pre>
+
+&lt;div class="holder"&gt;
+	&lt;div class="container"&gt;
+	&lt;div id="testimonial" class="carousel slide" data-ride="carousel"&gt;
+  &lt;!-- Indicators --&gt;
+  &lt;ol class="carousel-indicators"&gt;
+    &lt;li data-target="#testimonial" data-slide-to="0" class="active"&gt;&lt;img src="images/face1.jpg"/&gt;&lt;/li&gt;
+    &lt;li data-target="#testimonial" data-slide-to="1"&gt;&lt;img src="images/face2.jpg"/&gt;&lt;/li&gt;
+    &lt;li data-target="#testimonial" data-slide-to="2"&gt;&lt;img src="images/face3.jpg"/&gt;&lt;/li&gt;
+
+  &lt;/ol&gt;
+
+  &lt;!-- Wrapper for slides --&gt;
+  &lt;div class="carousel-inner" role="listbox"&gt;
+    &lt;div class="item active"&gt;
+      &lt;img src="images/face1.jpg" &gt;
+	  &lt;h1&gt;"Loreum ipsom sit dolore amet Neque porro quisquam est qui dolorem ipsum&lt;br&gt; quia dolor sit amet, consectetur, adipisci velit "&lt;/h1&gt;
+	  &lt;h2&gt;&lt;i&gt;John Doe&lt;/i&gt;&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div class="item"&gt;
+      &lt;img src="images/face2.jpg" &gt;
+	  &lt;h1&gt;"Contrary to popular belief, Lorem Ipsum is not simply random text. &lt;br&gt;
+	  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+	  "&lt;/h1&gt;
+      &lt;h2&gt;&lt;i&gt;Edward Doe&lt;/i&gt;&lt;/h2&gt;
+	&lt;/div&gt;
+
+    &lt;div class="item"&gt;
+      &lt;img src="images/face3.jpg" &gt;
+	  &lt;h1&gt;"Loreum ipsom sit dolore amet Neque porro quisquam est qui dolorem ipsum&lt;br&gt; quia dolor sit amet, consectetur, adipisci velit "&lt;/h1&gt;
+	  &lt;h2&gt;&lt;i&gt;Jane Doe&lt;/i&gt;&lt;/h2&gt;
+
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;!-- Left and right controls --&gt;
+  &lt;a class="left carousel-control" href="#testimonial" role="button" data-slide="prev"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="right carousel-control" href="#testimonial" role="button" data-slide="next"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+</pre>
+</div>
+<div class="container">
+
+<pre>
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900,300);
+.holder{
+  width:100%;
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#testimonial .carousel-control.right {
+background-image:none;
+}
+#testimonial .carousel-control.left {
+background-image:none;
+}
+#testimonial .carousel-inner{
+text-align:center;
+height:400px;
+
+}
+#testimonial .carousel-indicators {
+    bottom: 10px;
+    z-index: 15;
+    padding-left: 0px;
+    text-align: center;
+    list-style: outside none none;
+    position: absolute;
+    
+    width: auto;
+   left:50%;
+    margin-left:-90px;
+	}
+#testimonial .carousel-indicators li {
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    background-color: transparent;
+    border: 1px solid #AEA4A4;
+    border-radius: 10px;
+    display: inline;
+    width: 10px;
+    cursor: pointer;
+}
+#testimonial .carousel-indicators li  img{
+width:45px;
+height:45px;
+border-radius:40px;
+border:4px solid #fff;
+ -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    transition-timing-function: linear;
+}
+#testimonial .carousel-indicators li  img:hover{
+width:60px;
+height:60px;
+border-radius:40px;
+border:4px solid #fff;
+ -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    transition-timing-function: linear;
+}
+.item{
+padding-top:50px;
+}
+.item  img{
+width:100px;
+height:100px;
+border-radius:70px;
+border:4px solid #fff;
+margin:auto;
+}
+.item h1{
+color:#fff;
+font-family: "Lato",sans-serif;
+font-size: 18px;
+margin-top:40px;
+font-weight:300;
+}
+.item h2{
+color:#fff;
+font-family: "Lato",sans-serif;
+font-size: 14px;
+margin-top:20px;
+font-weight:300;
+}
+</pre>
+
 
 </div>
 </body>

@@ -1,4 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:900,300);
+
+.top{
+text-align:center;
+color:#000 !important;
+font-family: "Lato",sans-serif !important;
+font-size: 35px !important;
+margin-top:40px !important;
+font-weight:300 !important;
+margin-bottom:40px !important;
+text-decoration: underline; 
+}
+pre{
+
+height:300px;
+overflow:auto;
+}
 .holder{
   width:100%;
   background: url(../images/bg.jpg) no-repeat center center fixed; 
